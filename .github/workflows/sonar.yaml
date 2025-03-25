@@ -19,6 +19,7 @@ jobs:
           
       - name: Run SonarQube Scanner
         run: |
-          curl -sSLo sonar-scanner.zip https://github.com/SonarSource/sonar-scanner-cli/releases/download/4.6.2.2472/sonar-scanner-cli-4.6.2.2472-linux.zip
+          curl -sSLo sonar-scanner.zip https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.7.0.2747-linux.zip
           unzip sonar-scanner.zip
           ./sonar-scanner-4.6.2.2472-linux/bin/sonar-scanner -Dsonar.projectKey=my-project-key -Dsonar.host.url=http://18.215.248.121:9000/ -Dsonar.login=squ_d262230d6e51332d23beabc77cc10dba4dbf4825
+         
